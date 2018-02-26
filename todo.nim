@@ -1,21 +1,9 @@
 import os, strutils, times, streams, sequtils
 
-# let f = readFile("todos.txt")
-
 if existsFile("todos.txt") == false:
   writeFile("todos.txt", "")
 
-# let f = open("todos.txt")
-
-# # f.writeLine("hello")
-
-# for i in f.lines:
-#   echo i
-  
-# f.close()
 let file = readFile("todos.txt")
-
-# echo "\n"
 
 if paramCount() != 0:
   if toLowerAscii(paramStr(1)) == "add":
@@ -84,5 +72,3 @@ else:
     if ln[0] != "x"[0]:
       echo intToStr(cnt) & ": " & ln
       cnt+=1
-
-# echo "\n"
