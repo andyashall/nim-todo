@@ -1,0 +1,3 @@
+2018-02-26 @todo add terminal colors for projects
+2018-02-26 @todo combine functions
+2018-02-26 @todo optimise and clean up
